@@ -28,7 +28,7 @@ Spring 리액티브를 실전에서 활용하기 위해 실습을 공부하는 �
 ## 진행상황
 
 * 이론 - Netty
-  1. [Netty 소개](netty/README.md)
+  1. [Netty 소개](netty/[0]/../[0]%20Intro/README.md)
   2. Channel Handler
   3. Channel Pipeline
   4. ByteBuf

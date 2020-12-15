@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Temperature</title>
+</head>
+<script type="application/javascript">
+  const add = message => {
+    const el = document.createElement('li');
+    el.innerHTML = message;
+    document.getElementById('events').appendChild(el);
+  };
+  const eventSource = new EventSource('/temperature-stream');
+  eventSource.onmessage = e => {
+    const t = JSON.parse(e.data);
+    const fixed = Number(t.value).toFixed(2);
+    add(`Temperature: ${fixed} C`);
+  };
+  eventSource.onopen = _ => add('Connection opened');
+  eventSource.onerror = _ => add('Connection closed');
+</script>
+<body>
+<ul id="events"></ul>
+</body>
+</html>

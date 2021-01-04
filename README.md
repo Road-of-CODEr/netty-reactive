@@ -32,7 +32,7 @@ Spring 리액티브를 실전에서 활용하기 위해 실습을 공부하는 �
   2. [Channel](netty/[1]%20Channel/README.md)
   3. [ByteBuf](netty/[2]%20ByteBuf/README.md)
   4. [EventLoop](netty/[3]%20EventLoop/README.md)
-  5. BootStrap
+  5. [BootStrap](netty/[4]%20BootStrap/README.md)
   6. 코덱
 
 * 실전 - Spring Reactive

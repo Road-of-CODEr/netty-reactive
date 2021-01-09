@@ -36,7 +36,7 @@ Spring 리액티브를 실전에서 활용하기 위해 실습을 공부하는 �
   6. 코덱
 
 * 실전 - Spring Reactive
-  1. 리액티브 기초 개념(1,2장)
+  1. 리액티브 기초 개념(1,2장) - [huisam](spring-reactive/huisam/src/main/java/com/study/huisam/chapter2) [minhyoungPark](spring-reactive/minhyungPark/src/main/java/com/study/minhyungpark/chapter2)
   2. 리액티브 스트림(3장)
   3. 리액터(4장)
   4. WebFlux(6장)

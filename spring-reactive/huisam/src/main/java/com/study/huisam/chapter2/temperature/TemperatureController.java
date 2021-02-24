@@ -8,7 +8,6 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.mvc.method.annotation.SseEmitter;
 
-import javax.servlet.http.HttpServletRequest;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
@@ -20,7 +19,7 @@ public class TemperatureController {
     private final Set<SseEmitter> clients = new CopyOnWriteArraySet<>();
 
     @GetMapping("/temperature-stream")
-    public SseEmitter events(HttpServletRequest request) {
+    public SseEmitter events() {
         final SseEmitter sseEmitter = new SseEmitter();
         clients.add(sseEmitter);
         log.info("{}", sseEmitter);

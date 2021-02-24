@@ -1,0 +1,7 @@
+POST localhost:8080/block/accounts
+Content-Type: application/json
+
+{
+  "owner": "test",
+  "value": 1.2334
+}

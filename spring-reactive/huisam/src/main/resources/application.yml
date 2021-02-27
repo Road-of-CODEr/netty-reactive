@@ -1,0 +1,7 @@
+external:
+  flask:
+    servers:
+      - host: localhost
+        port: 1234
+      - host: localhost
+        port: 1235

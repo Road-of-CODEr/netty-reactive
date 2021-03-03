@@ -1,0 +1,10 @@
+spring:
+  data:
+    mongodb:
+      host: localhost
+      port: 27017
+      database: reactive
+  cloud:
+    loadbalancer:
+      ribbon:
+        enabled: false

@@ -50,7 +50,7 @@ subprojects {
         implementation 'org.springframework.boot:spring-boot-starter-data-mongodb-reactive'
         implementation 'org.springframework.boot:spring-boot-starter-data-mongodb'
 
-        implementation 'org.springframework.cloud:spring-cloud-starter-netflix-ribbon'
+        implementation 'org.springframework.cloud:spring-cloud-starter-loadbalancer'
 
         compileOnly 'org.projectlombok:lombok'
         annotationProcessor 'org.projectlombok:lombok'

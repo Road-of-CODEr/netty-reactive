@@ -1,12 +1,12 @@
 package com.study.huisam.mongodb;
 
 import com.study.huisam.mongodb.domain.Account;
-import com.study.huisam.mongodb.dto.AccountSaveRequestDTO;
 import com.study.huisam.mongodb.repository.AccountCrudRepository;
 import com.study.huisam.mongodb.service.AccountService;
 import lombok.RequiredArgsConstructor;
-import org.springframework.web.bind.annotation.*;
-import reactor.core.publisher.Flux;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RestController;
 import reactor.core.publisher.Mono;
 
 import javax.annotation.PostConstruct;
@@ -35,16 +35,6 @@ public class AccountController {
     @GetMapping("/account/{id}")
     public Mono<Account> get(@PathVariable("id") String id) {
         return accountRepository.findById(id);
-    }
-
-    @GetMapping("/accounts")
-    public Flux<Account> findAll() {
-        return accountRepository.findAll();
-    }
-
-    @PostMapping("/accounts")
-    public Mono<String> asyncSave(@RequestBody AccountSaveRequestDTO requestDTO) {
-        return accountService.asyncSave(requestDTO);
     }
 
 }

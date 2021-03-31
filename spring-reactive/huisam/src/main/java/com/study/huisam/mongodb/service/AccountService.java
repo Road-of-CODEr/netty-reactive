@@ -5,6 +5,7 @@ import com.study.huisam.mongodb.dto.AccountSaveRequestDTO;
 import com.study.huisam.mongodb.repository.AccountCrudRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
+import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 
 import java.util.UUID;
@@ -18,5 +19,9 @@ public class AccountService {
         final Account account = new Account(UUID.randomUUID().toString(), requestDTO.getOwner(), requestDTO.getValue());
         return accountCrudRepository.save(account)
                 .map(Account::getId);
+    }
+
+    public Flux<Account> findAll() {
+        return accountCrudRepository.findAll();
     }
 }

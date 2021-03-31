@@ -1,4 +1,4 @@
-POST localhost:8080/block/accounts
+POST localhost:8080/account
 Content-Type: application/json
 
 {

@@ -41,7 +41,8 @@ Spring 리액티브를 실전에서 활용하기 위해 실습을 공부하는 �
   3. 리액터(4장)
   4. WebFlux(6장)
   5. 리액티브로 데이터베이스 사용하기(7장)
-  6. 클라우드 스트림으로 확장(8장)
+  6. WebClient LoadBalancer with spring Cloud - [huisam](spring-reactive/huisam/src/main/java/com/study/huisam/chapter8) [minhyoungPark](spring-reactive/minhyungPark/src/main/java/com/study/minhyungpark/chapter8)
+  7. 클라우드 스트림으로 확장(8장)
 
 실전에서는 항상 테스트코드와 같이 가야합니다!
 

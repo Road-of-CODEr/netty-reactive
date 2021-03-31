@@ -5,3 +5,21 @@ external:
         port: 1234
       - host: localhost
         port: 1235
+
+
+#spring.cloud.stream:
+#  function.definition: joyboy;tunnel
+#  bindings:
+#    joyboy-out-0:
+#      content-type: application/json
+#      binder: kafka
+#      group: onepiece
+#      destination: student
+#    tunnel-in-0:
+#      content-type: application/json
+#      binder: kafka
+#      destination: student
+#      group: onepiece
+logging:
+  level:
+    com.stduy.huisam: info
